@@ -6,14 +6,14 @@ Criar regra no hosts
 Wind -> C:\Windows\System32\drivers\etc\hosts
 Linux ->/etc/hosts
 
-127.0.0.1 agenda-guilherme.com.br
+127.0.0.1 agenda.com.br
 
 criar virtual host 
 wind -> /xampp/apache/conf/extra/httpd-vhosts.conf
 Linux -> /etc/apache2/sites-avaible/000-default.conf
 <VirtualHost *:80>
-    ServerName agenda-guilherme.com.br
-    ServerAlias www.agenda-guilherme.com.br
+    ServerName agenda.com.br
+    ServerAlias www.agenda.com.br
     DocumentRoot "C:\xampp\htdocs\agenda"
     ErrorLog "logs/agenda-error.log"
     CustomLog "logs/agenda-access.log" common
@@ -24,3 +24,5 @@ Linux -> /etc/apache2/sites-avaible/000-default.conf
         Allow from all
     </Directory>
 </VirtualHost>
+
+Exportar os arquivos .sql
